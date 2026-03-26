@@ -6,6 +6,16 @@ Follow my journey on Twitter: [@CHiang_AILab](https://twitter.com/CHiang_AILab)
 
 ---
 
+
+## Free Resources
+
+| Resource | Description | Download |
+|----------|-------------|----------|
+| AI Money Blueprint | 10 proven methods to earn online with AI | **[Download eBook](AI-Money-Blueprint.docx)** |
+| AI Tools Comparison 2026 | 48+ tools compared by category, price, difficulty, income | **[Download Excel](AI-Tools-Comparison-2026.xlsx)** |
+| 100 Money-Making Prompts | Ready-to-use prompt templates for every income stream | **[Download Prompts](100-Money-Making-Prompts.docx)** |
+
+---
 ## Table of Contents
 - [Content Creation](#content-creation)
 - [Design & Images](#design--images)
