@@ -56,6 +56,7 @@ Follow my journey on Twitter: [@CHiang_AILab](https://twitter.com/CHiang_AILab)
 
 | Tool | What It Does | Money-Making Method | Cost |
 |------|-------------|---------------------|------|
+| [Systeme.io](https://systeme.io/zh?sa=sa0267136844cd4d8b3300479b6a2d3e80954b5050) | All-in-one marketing platform | Build funnels, sell courses, email marketing — 60% affiliate commission | Free / $27/mo |
 | [Zapier](https://zapier.com) | Workflow automation | Sell automation services to businesses | Free / $20/mo |
 | [Make](https://make.com) | Visual automation builder | Build automated systems for clients | Free / $9/mo |
 | [Notion AI](https://notion.so) | AI-powered workspace | Project management, templates | $10/mo |
@@ -90,4 +91,4 @@ Found a great AI money-making tool? Open a PR!
 
 ---
 
-*Last updated: March 26, 2026*
+*Last updated: March 26, 2026 | Some links are affiliate links — I earn a commission at no extra cost to you.*
