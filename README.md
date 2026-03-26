@@ -2,7 +2,7 @@
 
 A curated list of AI tools and methods to make money online. Updated daily.
 
-Follow my journey on Twitter: [@CHiang_AI](https://twitter.com/CHiang844684600)
+Follow my journey on Twitter: [@CHiang_AILab](https://twitter.com/CHiang_AILab)
 
 ---
 
@@ -85,7 +85,7 @@ Found a great AI money-making tool? Open a PR!
 
 ## Stay Updated
 
-- Follow on Twitter: [@CHiang_AI](https://twitter.com/CHiang844684600)
+- Follow on Twitter: [@CHiang_AILab](https://twitter.com/CHiang_AILab)
 - Star this repo to get updates
 
 ---
