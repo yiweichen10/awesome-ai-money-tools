@@ -1,0 +1,308 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1774487442822-1piez5o2",
+      "name": "Twitter午间推文",
+      "description": "每天中午13:00自动发布一条AI赚钱相关推文",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774487442822,
+      "updatedAtMs": 1774501200430,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 13 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "现在是定时发推时间（午间档）。请执行以下操作：\n1. 读取 tweets-queue.json 文件\n2. 找到下一条 slot 为 afternoon 的未发送推文\n3. 用 post_tweet 工具发布该推文\n4. 发布后从队列中移除该条目（更新 JSON 文件）\n5. 如果队列中 afternoon 推文不足3条，生成新的推文补充到队列中\n\n推文风格：AI工具推荐、赚钱方法列表、实操教程。英文发布。",
+        "agent": "main",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1774587600000,
+        "lastRunAtMs": 1774501200367,
+        "lastStatus": "ok",
+        "lastDurationMs": 260
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774489691643-hfivf6sv",
+      "name": "Twitter热点追踪",
+      "description": "每日 10:00 自动搜索 Twitter AI 赚钱热点并发布推文。",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774489691643,
+      "updatedAtMs": 1774502967137,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是Twitter热点追踪任务。请执行以下步骤：\n1. 用 search_twitter 工具搜索以下热门话题（每个搜索取Top 5条）：\n   - 'AI tools 2026'\n   - 'make money online AI'\n   - 'ChatGPT tips'\n   - 'passive income AI'\n2. 分析搜索结果中最火的话题和趋势\n3. 基于热点话题，生成一条英文推文（不超过280字符）\n4. 尝试用 post_tweet 工具发布这条推文\n5. 如果 post_tweet 返回 403 错误，则改用 sessions_spawn 生成 browser 子代理，通过浏览器打开 https://x.com/compose/tweet 输入推文内容并点击发布\n6. 发布成功后报告推文内容",
+        "agent": "main",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1774576800000,
+        "lastRunAtMs": 1774490400096,
+        "lastStatus": "error",
+        "lastDurationMs": 8,
+        "lastError": "Cron runner prerequisites not met: webSocketServer=true, agentId=null, accountDir=true"
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774490348055-zp3dglbj",
+      "name": "GitHub仓库自动更新",
+      "description": "每周一自动更新GitHub仓库，添加新AI工具和赚钱方法",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774490348055,
+      "updatedAtMs": 1774490348055,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是GitHub仓库自动更新任务。请执行以下步骤：\n1. 用 web_search 搜索最新的AI赚钱工具和方法（搜索 'best new AI tools 2026', 'AI side hustle tools'）\n2. 基于搜索结果，挑选2-3个新的AI工具\n3. 用 bash 工具和 gh CLI 更新 GitHub 仓库 yiweichen10/awesome-ai-money-tools 的 README.md：\n   - 先用 gh api 获取当前 README.md 内容和 SHA\n   - 在合适的分类下添加新工具\n   - 更新 'Last updated' 日期\n   - 用 gh api PUT 提交更新\n4. 报告更新了哪些工具",
+        "agent": "main",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1774832400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774490378413-iyxyp9ku",
+      "name": "GitHub引流推文",
+      "description": "每周三下午3点自动发一条推广GitHub仓库的推文",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774490378413,
+      "updatedAtMs": 1774490378413,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * 3",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是GitHub引流推文任务。请用 post_tweet 发布以下推文（每次从下面随机选一条风格，生成新内容）：\n\n风格参考：\n- 推荐你的GitHub资源合集：'I built a FREE resource: 50+ AI tools that can make you money in 2026. Categorized by skill level. Updated weekly. Star it → github.com/yiweichen10/awesome-ai-money-tools #AI #MakeMoneyOnline'\n- 列出几个精选工具后引导到GitHub：'每条推文只能介绍1个AI工具。但我整理了50+个，全部分类好了，附带赚钱方法。链接在这→ github.com/yiweichen10/awesome-ai-money-tools'\n\n要求：\n1. 生成一条新的英文引流推文（不要完全照搬上面的模板，要有变化）\n2. 必须包含 github.com/yiweichen10/awesome-ai-money-tools 链接\n3. 不超过280字符\n4. 用 post_tweet 发布\n5. 报告发布结果",
+        "agent": "main",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1775026800000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774491581059-muqyyd15",
+      "name": "Twitter互动增长",
+      "description": "每日自动搜索热门AI话题并进行引用转发互动，以增加Twitter曝光。",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774491581059,
+      "updatedAtMs": 1774491581059,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 16 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是Twitter互动增长任务。请执行以下步骤：\n1. 用 search_twitter 工具搜索以下话题（product='Top', count=5）：\n   - 'AI tools tips'\n   - 'make money with AI'\n   - 'ChatGPT hack'\n2. 从搜索结果中找到1条互动量高（点赞多）的推文\n3. 用 post_tweet 工具发一条引用推文（quote tweet），格式：\n   - 加上你自己的观点/补充/价值评论\n   - 必须提供价值，不能只是'great post'\n   - 不超过200字符（留空间给引用）\n   - 使用 quote_tweet_id 参数传入原推文ID\n4. 如果引用推文不可用，就发一条回应热点的原创推文\n5. 报告发布结果",
+        "agent": "main",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1774512000000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774491584657-pppmwqeg",
+      "name": "Reddit热点监控",
+      "description": "每周二和周六监控Reddit AI赚钱热点并发布推文",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774491584657,
+      "updatedAtMs": 1774491584657,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 2,6",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是Reddit热点监控任务。请执行以下步骤：\n1. 用 mcp_call 调用 search_subreddits_by_name 搜索：\n   - query: 'artificial intelligence'\n   - query: 'sidehustle'\n   - query: 'beermoney'\n2. 用 web_search 搜索 'site:reddit.com AI tools make money this week'\n3. 分析Reddit上AI赚钱领域的热门讨论\n4. 基于发现生成1条推文，引用Reddit热点话题\n5. 用 post_tweet 发布\n6. 报告发现和发布结果",
+        "agent": "main",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1774670400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774491600568-ca6mxwqw",
+      "name": "竞品内容分析",
+      "description": "每周日 14:00 执行竞品 Twitter 分析任务",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774491600568,
+      "updatedAtMs": 1774491600568,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是竞品Twitter分析任务。请执行以下步骤：\n1. 用 search_twitter 工具搜索以下AI赚钱领域大V的最新热门推文：\n   - 搜索 'AI tools' filter:follows min_faves:100 (Top产品)\n   - 搜索 'make money online AI' min_faves:50 (Top产品)\n   - 搜索 'side hustle AI tools' min_faves:50 (Top产品)\n2. 分析这些高互动推文的共同特征：\n   - 什么格式最受欢迎（列表？故事？教程？）\n   - 什么话题互动最高\n   - 使用了什么hook\n3. 基于分析结果生成3条新推文，存入 C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project\\tweets-queue.json\n4. 将分析报告追加到 C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project\\competitor-analysis.md\n5. 报告分析发现",
+        "agent": "main",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1774764000000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774498170679-yf10j1mk",
+      "name": "Affiliate工具推荐推文",
+      "description": "自动发布Affiliate AI工具推荐推文的任务，每周二和周五 09:00 运行。",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774498170679,
+      "updatedAtMs": 1774498170679,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 2,5",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是Affiliate工具推荐推文任务。请执行以下步骤：\n1. 从以下高佣金AI工具列表中选择1-2个工具进行推荐：\n   - Systeme.io (营销平台, 60%终身佣金)\n   - TubeBuddy (YouTube工具, 50%终身佣金)\n   - Writesonic (AI写作, 30%终身佣金)\n   - Jasper AI (AI写作, 30%佣金)\n   - Surfer SEO (SEO工具, 25%终身佣金)\n   - ElevenLabs (AI语音, 20%佣金)\n   - Descript (视频编辑, 30%佣金)\n   - ConvertKit (邮件营销, 30%佣金)\n   - Canva Pro (设计, $36/单)\n   - Grammarly (写作, $20-200/单)\n2. 生成一条英文推文，要求：\n   - 以实用内容为主，自然推荐工具\n   - 格式可以是：工具深度评测、工具对比、用工具赚钱教程\n   - 不超过280字符\n   - 包含具体的赚钱金额和方法\n   - 使用 #AI #AItools 等标签\n3. 用 post_tweet 发布\n4. 报告发布了什么内容",
+        "agent": "main",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1774573200000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774498170805-nnmf739q",
+      "name": "TikTok热点→Twitter",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774498170805,
+      "updatedAtMs": 1774498170805,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 1,4",
+        "tz": "Asia/Shanghai"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "这是TikTok热点监控任务。请执行以下步骤：\n1. 用 tiktok_search_videos 工具搜索以下话题（每个取5条）：\n   - search_terms: ['AI tools', 'make money online']\n   - search_terms: ['side hustle', 'passive income']\n   - search_terms: ['ChatGPT hack', 'AI business']\n2. 用 tiktok_get_trending_videos 获取当前热门视频（count: 10）\n3. 分析TikTok上最火的AI赚钱话题和趋势\n4. 基于发现生成2条英文Twitter推文：\n   - 第1条：基于TikTok热点话题的实用内容（例如 'TikTok is going crazy over this AI tool...' 引发好奇心）\n   - 第2条：从TikTok热门视频提炼的干货\n5. 用 post_tweet（通过 mcp_call）发布这2条推文\n6. 报告发现了什么TikTok热点以及发布了什么推文",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1774504800000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-32848970U1774487-4315D2-0290-9B9622"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1751848970\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "general"
+      },
+      "sessionTarget": "main"
+    }
+  ]
+}

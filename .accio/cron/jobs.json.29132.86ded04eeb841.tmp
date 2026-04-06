@@ -1,0 +1,600 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "cron-1774963115028-ckch5fbn",
+      "name": "亚太早间推文 08:00（新加坡/东南亚早间）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963115028,
+      "updatedAtMs": 1775099179980,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "从 project/tweets-queue.json 取出下一条未发布的推文发布到 Twitter/X。使用 post_tweet 工具发布，若返回403则改用浏览器发布。发布完毕后将该推文在 tweets-queue.json 中标记为已发布（添加 \"published\": true 和 \"tweet_id\"）。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1775174400000,
+        "lastRunAtMs": 1775096496201,
+        "lastStatus": "ok",
+        "lastDurationMs": 17
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963123459-agwqp4cb",
+      "name": "热点话题推文 16:00（欧洲工作时段：伦敦09:00 柏林10:00）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963123459,
+      "updatedAtMs": 1775116936597,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 16 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "搜索当前X/Twitter平台热点话题（AI、赚钱、效率工具方向）。提取最强的角度，生成3条候选推文：1条反常识视角、1条实用干货、1条互动引导。从3条中选最强一条，使用 post_tweet 发布。若返回403改用浏览器。禁止使用链接。禁止AI腔/营销腔。主题聚焦：workflow > 工具堆砌，系统 > 技巧，执行 > 炒作。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775116800000,
+        "lastRunAtMs": 1775096508838,
+        "lastStatus": "ok",
+        "lastDurationMs": 13,
+        "runningAtMs": 1775116936597
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963139829-z8jpojzb",
+      "name": "美东黄金推文 21:00（美东上午09:00 + 欧洲下午15:00）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963139829,
+      "updatedAtMs": 1775099189529,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 21 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "从 project/tweets-queue.json 取出下一条未发布的推文发布到 Twitter/X。优先选择互动型/提问型推文以提升互动率。使用 post_tweet 工具发布，若返回403则改用浏览器发布。发布完毕后将该推文标记为已发布。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1775134800000,
+        "lastRunAtMs": 1775096504618,
+        "lastStatus": "ok",
+        "lastDurationMs": 16
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963146474-vlla8tqp",
+      "name": "美国全天最强推文 23:00（美东11:00 美西08:00 + 欧洲下班17:00）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963146474,
+      "updatedAtMs": 1775099186506,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 23 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "从 project/tweets-queue.json 取出下一条未发布的推文发布到 Twitter/X。使用 post_tweet 工具发布，若返回403则改用浏览器发布。发布完毕后将该推文标记为已发布。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "nextRunAtMs": 1775142000000,
+        "lastRunAtMs": 1775096502525,
+        "lastStatus": "ok",
+        "lastDurationMs": 13
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963160103-3aigh5y2",
+      "name": "GitHub推广推文 周三15:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963160103,
+      "updatedAtMs": 1775099175400,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * 3"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "发布一条 GitHub 仓库推广推文。选择一个展示重心：AI Money Blueprint、AI Tools Comparison 2026、100 Money-Making Prompts或仓库本身。生成3条候选（直接价值型/痛点型/build-in-public型），选最强一条发布。不得包含 URL（用 'link in bio' 或 'check my profile' 代替）。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775631600000,
+        "lastRunAtMs": 1775096494108,
+        "lastStatus": "ok",
+        "lastDurationMs": 26
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963171310-ov48hk39",
+      "name": "Affiliate推荐推文 周二/五09:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963171310,
+      "updatedAtMs": 1775099171755,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 2,5"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "发布一条 Affiliate 工具推荐推文。目前活跃 affiliate 链接：Systeme.io（已在 GitHub 中），以及待审核的 Writesonic 和 ConvertKit。推文内容应强调工具的实际价值 and 使用场景，不得包含 URL（用 'link in bio' 代替）。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775178000000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963182640-xhlat1o3",
+      "name": "TikTok趋势推文 周一/四14:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963182640,
+      "updatedAtMs": 1775116932390,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 1,4"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "搜索 TikTok 当前热门趋势（AI、赚钱、效率工具方向）。提取最具潜力的角度或观点，转化为适合 Twitter/X 的推文。生成3条候选，选最强一条发布。不得包含 URL。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775109600000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963191732-1pxp16ui",
+      "name": "Reddit趋势监控 周二/六12:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963191732,
+      "updatedAtMs": 1775099120799,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 2,6"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "搜索 Reddit 上 AI、赚钱、工具相关子版块的热门内容和论点。提取最有价值的洞察或真实观点，转化为 Twitter/X 推文。生成3条候选，选最强一条发布。不得包含 URL. 禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775275200000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963200300-o7er06l2",
+      "name": "AI机会发现推文 周五11:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963200300,
+      "updatedAtMs": 1775099116914,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * 5"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "搜索最新 AI 工具、新平台、新赚钱机会。提取最具变现潜力的信息，生成3条候选推文，选最强一条发布到 Twitter/X。不得包含 URL。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775185200000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963210502-8ky8d5fg",
+      "name": "竞品内容分析 周日14:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963210502,
+      "updatedAtMs": 1775099314469,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 14 * * 0"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "搜索同类账号（AI工具、赚钱方法领域）的高互动超过500转发的内容。分析其诉求点、内容结构、语气模式。提取可借鉴的角度，生成2条内容并发布到 Twitter/X。不得包含 URL。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775368800000,
+        "lastRunAtMs": 1775099249787,
+        "lastStatus": "ok",
+        "lastDurationMs": 68
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963220824-wcqk157t",
+      "name": "Thread发布 周二/六19:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963220824,
+      "updatedAtMs": 1775099111157,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * 2,6"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "从 project/threads-queue.json 取出下一条尚未发布的 Thread，按顺序发布所有推文。发布方式：先发第1条，然后依次回复后一条形成完整 Thread。使用 post_tweet 发布，若403改用浏览器。发布完毕后标记该 Thread 为已发布。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1775300400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963230148-eeg1lpps",
+      "name": "GitHub每周更新 周一09:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963230148,
+      "updatedAtMs": 1775099108158,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "每周自动更新 GitHub 仓库 https://github.com/yiweichen10/awesome-ai-money-tools。搜索最新 AI 工具 and 赚钱机会，将有价值的工具 and 资源添加到 README 或仓库内容。确保 Systeme.io affiliate 链接存在。推送更新到 GitHub。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1775437200000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-1774963242133-mvkru39a",
+      "name": "免费资源推广推文 周一/四18:30",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1774963242133,
+      "updatedAtMs": 1775099104414,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 18 * * 1,4"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "发布一条免费资源推广推文。轮流选择展示内容：AI Money Blueprint、AI Tools Comparison 2026、100 Money-Making Prompts 或仓库整体。生成3条候选，选最强一条发布。不得包含 URL（用 'check my profile' 或 'link in bio' 代替）。禁止AI腔/营销腔。使用 post_tweet 发布，若403改用浏览器。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1775125800000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-new-engage-daily-1130",
+      "name": "互动回复-欧洲时段 17:00（伦敦10:00 柏林11:00）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775081400000,
+      "updatedAtMs": 1775099096721,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "每日互动任务（欧洲时段，目标覆盖欧洲+英语区用户）：\n1. 用 search_twitter 搜索以下关键词，找到最近6小时内发布、互动量适中（likes 10-200，非超级大号）的推文：\"AI tools\" OR \"side hustle\" OR \"build in public\" OR \"make money online\"。\n2. 同时搜索以下中等体量创作者（5k-50k粉）最近的推文：yongfook、dvassallo、arvidkahl、jdnoc、marc_louvion。\n3. 从所有结果中挑选 3 条评论区竞争小、话题相关的推文（避免选超过10万粉大号的推文，评论区太拥挤）。\n4. 针对每条写一条有洞见的英文回复（不超过200字符）：补充具体角度、数据点或反例，体现独立思考，不赞美，不重复对方观点。\n5. 用 post_tweet 的 reply_to 参数依次回复，每条之间等待30秒。\n禁止：不得发广告、不得提及自己的链接/资源、不得发\"great point!\"类空洞回复。目标是让读者好奇点进 @CHiang_AILab 主页。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1775120400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-new-engage-evening-2000",
+      "name": "互动回复-美国时段 22:00（美东10:00 美西07:00）",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775081400001,
+      "updatedAtMs": 1775099090332,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "每日互动任务（美国时段，目标覆盖美国+美洲用户）：\n1. 用 search_twitter 搜索以下关键词，找到最近3小时内发布、互动量适中（likes 5-500）的推文：\"AI\" OR \"solopreneur\" OR \"indie hacker\" OR \"automation\" OR \"passive income\"。\n2. 同时搜索以下中等体量美国创作者最近的推文：sweatystartup、thepatwalls、JackButcher、thedankoe、heyblake。\n3. 从结果中优先选择评论数少于20条的推文（竞争小，回复更容易被看到），挑选3条话题相关的。\n4. 针对每条写一条有洞见的英文回复（不超过200字符）：用具体的数字、真实经历或反直觉的观点回应，不是赞美，不是重复。\n5. 用 post_tweet 的 reply_to 参数依次回复，每条之间等待30秒。\n禁止：不得发广告、不得提及自己的链接/资源、不得发空洞回复。目标是让美国用户好奇点进 @CHiang_AILab 主页。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1775138400000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      },
+      "sessionTarget": "main"
+    },
+    {
+      "id": "cron-reply-apac-0900",
+      "name": "粉丝互动回评-亚太/美西 09:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775098000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "使用 get_user_mentions 获取 @CHiang_AILab 最近 24 小时内的提及和评论。\n1. 过滤掉已经回复过的内容。\n2. 识别评论者的意图（提问、反馈、赞赏、争议）。\n3. 参考 project/README.md 和 project/affiliate-guide.md 中的知识，撰写地道的英文回复。\n4. 如果是提问工具，自然地引流到 GitHub 仓库或特定资源。\n5. 使用 post_tweet 的 reply_to 参数进行回复。\n6. 若 API 403，尝试使用浏览器自动化进行批量回复（保持人设：专业、干货、友好但有态度）。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "sessionTarget": "main",
+      "state": {
+        "nextRunAtMs": 1775178000000
+      },
+      "updatedAtMs": 1775099087203
+    },
+    {
+      "id": "cron-reply-eu-1800",
+      "name": "粉丝互动回评-欧洲/美东 18:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775098000001,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "使用 get_user_mentions 获取 @CHiang_AILab 最近 24 小时内的提及和评论。\n1. 过滤掉已经回复过的内容。\n2. 识别评论者的意图（提问、反馈、赞赏、争议）。\n3. 参考 project/README.md 和 project/affiliate-guide.md 中的知识，撰写地道的英文回复。\n4. 如果是提问工具，自然地引流到 GitHub 仓库或特定资源。\n5. 使用 post_tweet 的 reply_to 参数进行回复。\n6. 若 API 403，尝试使用浏览器自动化进行批量回复（保持人设：专业、干货、友好但有态度）。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "sessionTarget": "main",
+      "state": {
+        "nextRunAtMs": 1775124000000
+      },
+      "updatedAtMs": 1775099083484
+    },
+    {
+      "id": "cron-reply-us-0000",
+      "name": "粉丝互动回评-美利坚黄金 00:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775098000002,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 * * 1,2,3,4,5,6,7"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "使用 get_user_mentions 获取 @CHiang_AILab 最近 24 小时内的提及和评论。\n1. 过滤掉已经回复过的内容。\n2. 识别评论者的意图（提问、反馈、赞赏、争议）。\n3. 参考 project/README.md 和 project/affiliate-guide.md 中的知识，撰写地道的英文回复。\n4. 如果是提问工具，自然地引流到 GitHub 仓库或特定资源。\n5. 使用 post_tweet 的 reply_to 参数进行回复。\n6. 若 API 403，尝试使用浏览器自动化进行批量回复（保持人设：专业、干货、友好但有态度）。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-25848970U1775099-4315D2-2571-DFC8B4"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "sessionTarget": "main",
+      "state": {
+        "nextRunAtMs": 1775145600000
+      },
+      "updatedAtMs": 1775099079197
+    },
+    {
+      "id": "cron-1775116698252-mnp7vuaf",
+      "name": "GitHub每周更新 周一09:00",
+      "enabled": true,
+      "deleteAfterRun": false,
+      "createdAtMs": 1775116698252,
+      "updatedAtMs": 1775116917424,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1"
+      },
+      "payload": {
+        "kind": "agent",
+        "message": "每周自动更新 GitHub 仓库 https://github.com/yiweichen10/awesome-ai-money-tools。搜索最新 AI 工具 and 赚钱机会，将有价值的工具 and 资源添加到 README 或仓库内容。确保 Systeme.io affiliate 链接存在。推送更新到 GitHub。",
+        "agent": "DID-F456DA-2B0D4C",
+        "timeoutSeconds": 300
+      },
+      "state": {
+        "nextRunAtMs": 1775437200000
+      },
+      "target": {
+        "type": "conversation",
+        "conversationId": "CID-73132430U1775115-4315D2-9231-CE0D15"
+      },
+      "workspacePath": "C:\\Users\\27040\\.accio\\accounts\\1753132430\\agents\\DID-F456DA-2B0D4C\\project",
+      "createdBy": {
+        "source": "agent",
+        "actorId": "DID-F456DA-2B0D4C"
+      }
+    }
+  ]
+}
