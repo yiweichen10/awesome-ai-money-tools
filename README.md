@@ -4,6 +4,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/yiweichen10/awesome-ai-money-tools?style=social)](https://github.com/yiweichen10/awesome-ai-money-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+<p align="center"><img src="assets/logo-b.png" width="420" alt="AI Money Lab"></p>
+
 A curated list of high-leverage AI tools and proven monetization strategies to build a $0 to $10k/month automated income system. Updated daily by **AI Money Lab**.
 
 > **"AI won't replace you, but a person using AI will."** — We help you be that person.
