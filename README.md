@@ -6,6 +6,8 @@
 
 <p align="center"><img src="assets/logo-b.png" width="420" alt="AI Money Lab"></p>
 
+[English](README.md) | [中文](README-zh.md)
+
 A curated list of high-leverage AI tools and proven monetization strategies to build a $0 to $10k/month automated income system. Updated daily by **AI Money Lab**.
 
 > **"AI won't replace you, but a person using AI will."** — We help you be that person.
@@ -44,7 +46,7 @@ A curated list of high-leverage AI tools and proven monetization strategies to b
 | Tool | Best For | Monetization Angle |
 |------|----------|-------------------|
 | [Midjourney](https://midjourney.com) | Photorealistic Art | Selling stock photos, POD (Print on Demand) |
-| [DALL-E 3](https://openai.com/dall-e-3) | Creative Illustration | Custom brand mascots, blog visuals |
+| [Sora & GPT-Image](https://sora.com) | AI Video & Images | Short-form video, custom visuals |
 | [Canva AI](https://canva.com) | Fast Templates | Managing small business social media |
 | [Leonardo AI](https://leonardo.ai) | Consistent Assets | Game asset design, NFT collections |
 
@@ -104,8 +106,4 @@ We welcome contributions! Have an AI tool that makes money?
 - **Stars**: If this list helps you, please give us a ⭐!
 
 ---
-*Last updated: April 6, 2026 | Built with ❤️ for the AI Creator Community.*
-e us a ⭐!
-
----
-*Last updated: April 2, 2026 | Built with ❤️ for the AI Creator Community.*
+*Last updated: August 11, 2026 | Built with ❤️ for the AI Creator Community.*
