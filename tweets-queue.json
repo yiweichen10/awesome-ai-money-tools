@@ -79,6 +79,12 @@
     "text": "What week 1 of building in public actually taught me:\n\n- Consistency without strategy is just noise\n- Starting with one income stream, not five, is harder than it sounds\n- AI amplifies your judgment — good or bad\n- The system matters more than the tools\n\nWeek 2 tomorrow. #BuildInPublic"
   },
   {
+    "day": 8,
+    "slot": "morning",
+    "source": "grok-case",
+    "text": "Testing Grok 4.6 as the main case study here for a week.\n\nWhy: one ecosystem now covers the whole loop — writing, images, video, plus Grok Bot & Grok Build.\n\nIf the output holds up, the stack gets smaller.\n\nPosting what I actually get, including the fails. #Grok #AI"
+  },
+  {
     "slot": "morning",
     "text": "The $10K/month AI screenshot is almost always month 6-12, not month 1.\n\nMonth 1 looks like:\n→ $0\n→ A few followers\n→ One method that sort of worked\n\nI'm in month 1. Keeping it real.\n\n#BuildInPublic #AI",
     "source": "reddit"
