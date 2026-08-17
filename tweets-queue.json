@@ -71,7 +71,8 @@
   {
     "day": 7,
     "slot": "afternoon",
-    "text": "If you had to pick one AI tool to learn in 2026, make it ChatGPT.\n\nNot because it's the best at everything.\n\nBecause understanding how to give instructions to AI transfers to every other tool you'll ever use.\n\nIt's the skill under the skill. #AI"
+    "text": "If you had to pick one AI tool to learn in 2026, make it ChatGPT.\n\nNot because it's the best at everything.\n\nBecause understanding how to give instructions to AI transfers to every other tool you'll ever use.\n\nIt's the skill under the skill. #AI",
+    "published": true
   },
   {
     "day": 7,
@@ -82,7 +83,8 @@
     "day": 8,
     "slot": "morning",
     "source": "grok-case",
-    "text": "Testing Grok 4.6 as the main case study here for a week.\n\nWhy: one ecosystem now covers the whole loop — writing, images, video, plus Grok Bot & Grok Build.\n\nIf the output holds up, the stack gets smaller.\n\nPosting what I actually get, including the fails. #Grok #AI"
+    "text": "Testing Grok 4.6 as the main case study here for a week.\n\nWhy: one ecosystem now covers the whole loop — writing, images, video, plus Grok Bot & Grok Build.\n\nIf the output holds up, the stack gets smaller.\n\nPosting what I actually get, including the fails. #Grok #AI",
+    "published": true
   },
   {
     "slot": "morning",
