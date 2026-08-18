@@ -87,6 +87,14 @@
     "published": true
   },
   {
+    "day": 9,
+    "slot": "morning",
+    "source": "grok-case",
+    "text": "Day 9. First image test of the Grok week.\n\nBrief: 2040 frozen city, one warm-lit safehouse surviving in the distance — doomsday short-drama concept art.\n\nSame brief in Grok Imagine that I'd give Midjourney.\n\nThe result is in the image. Judge it. #Grok #AI",
+    "published": true,
+    "reported": "31 views, 1 heart"
+  },
+  {
     "slot": "morning",
     "text": "The $10K/month AI screenshot is almost always month 6-12, not month 1.\n\nMonth 1 looks like:\n→ $0\n→ A few followers\n→ One method that sort of worked\n\nI'm in month 1. Keeping it real.\n\n#BuildInPublic #AI",
     "source": "reddit"
