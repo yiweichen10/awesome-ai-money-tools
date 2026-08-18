@@ -29,7 +29,7 @@ Views per post since restarting on X:
 
 → Day 8 (Grok kickoff): 31 (+1 ♥)
 
-Total: 142 views across 9 posts (Test + Day 1–8). Followers: 0. Money made: $0.
+Total: 142 views across 9 posts (Test + Day 1–8). Followers gained: 0 (7 pre-existing). Money made: $0.
 That is the real starting point — consistency is the test, not virality.
 Week 2: fewer broadcasts, more engagement. Day 9 (Grok test 01) posted, 24h data pending.
 
