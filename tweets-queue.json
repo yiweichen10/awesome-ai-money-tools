@@ -84,15 +84,15 @@
     "slot": "morning",
     "source": "grok-case",
     "text": "Testing Grok 4.6 as the main case study here for a week.\n\nWhy: one ecosystem now covers the whole loop — writing, images, video, plus Grok Bot & Grok Build.\n\nIf the output holds up, the stack gets smaller.\n\nPosting what I actually get, including the fails. #Grok #AI",
-    "published": true
+    "published": true,
+    "reported": "31 views, 1 heart"
   },
   {
     "day": 9,
     "slot": "morning",
     "source": "grok-case",
     "text": "Day 9. First image test of the Grok week.\n\nBrief: 2040 frozen city, one warm-lit safehouse surviving in the distance — doomsday short-drama concept art.\n\nSame brief in Grok Imagine that I'd give Midjourney.\n\nThe result is in the image. Judge it. #Grok #AI",
-    "published": true,
-    "reported": "31 views, 1 heart"
+    "published": true
   },
   {
     "slot": "morning",
