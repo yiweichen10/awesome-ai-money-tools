@@ -92,7 +92,8 @@
     "slot": "morning",
     "source": "grok-case",
     "text": "Day 9. First image test of the Grok week.\n\nBrief: 2040 frozen city, one warm-lit safehouse surviving in the distance — doomsday short-drama concept art.\n\nSame brief in Grok Imagine that I'd give Midjourney.\n\nThe result is in the image. Judge it. #Grok #AI",
-    "published": true
+    "published": true,
+    "reported": "35 views, 0 hearts, 0 alerts"
   },
   {
     "slot": "morning",
@@ -235,5 +236,13 @@
     "slot": "evening",
     "source": "competitor-analysis",
     "text": "The accounts actually making money with AI aren't posting \"comment MONEY for the list.\"\n\nThey're quiet about methods. Public about results.\n\nBuilding a specific niche. One real offer. Fewer tools, more systems.\n\nTrying to be that account. #AI #BuildInPublic"
+  },
+  {
+    "day": 10,
+    "slot": "morning",
+    "source": "grok-case",
+    "text": "Day 10. Moving from stills to motion.\n\nTaking the Day 9 concept art into Grok Imagine Video: 6-second test clip, survivor crossing the frozen city toward the safehouse.\n\nSame brief I'd use to demo a doomsday short-drama opening. Posting the output, including the fails. #Grok #AI",
+    "published": false,
+    "needs_user_action": true
   }
 ]
