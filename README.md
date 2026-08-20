@@ -37,13 +37,32 @@ Week 2: fewer broadcasts, more engagement. Day 10 (Grok test 02) — video test 
 
 ---
 
-## 🎁 Free Resources (Lead Magnets)
+## 🎁 Free Preview + Full Toolkit
 
-| Resource | Description | Status |
-|----------|-------------|----------|
-| 📘 **AI Money Blueprint** | 10 proven methods to earn online with AI (Step-by-step) | [Download eBook](AI-Money-Blueprint.docx) |
-| 📊 **AI Tools Comparison 2026** | 50+ tools compared by ROI, difficulty, and cost | [Download Excel](AI-Tools-Comparison-2026.xlsx) |
-| ✍️ **100 Money-Making Prompts** | Copy-paste templates for content, sales, and automation | [Download Prompts](100-Money-Making-Prompts.docx) |
+The free preview is the curated directory and practical roadmap on this page.
+
+The paid bundle contains the complete, downloadable working files:
+
+- **AI Money Blueprint 2026** — 15 step-by-step income methods
+- **120 Money-Making AI Prompts** — ready-to-use delivery workflows
+- **AI Tools Comparison 2026** — 61 tools across 16 categories
+
+→ [Get the complete toolkit on Gumroad](https://aranajordy.gumroad.com/l/ai-money-blueprint-2026)
+
+The complete files are no longer duplicated in this public repository.
+
+---
+
+## 🎬 English Short-Drama Localization
+
+I also rewrite Chinese short-drama concepts and scripts for English-speaking audiences. This is not literal translation: hooks, dialogue, episode pacing, cliffhangers, and paywall cuts are rebuilt for the target market.
+
+- One-episode paid pilot available
+- 60–90 second vertical episodes
+- Beat sheet, English script, shot cues, and two revision rounds
+- Sample: *Global Freeze: My Warehouse Keeps Upgrading*
+
+Starting at **$49 for a one-episode pilot**. Portfolio and sample episodes are available by DM on [X](https://twitter.com/CHiang_AILab).
 
 ---
 
@@ -129,4 +148,4 @@ We welcome contributions! Have an AI tool that makes money?
 - **Stars**: If this list helps you, please give us a ⭐!
 
 ---
-*Last updated: August 18, 2026 | Built with ❤️ for the AI Creator Community.*
+*Last updated: August 20, 2026 | Built with ❤️ for the AI Creator Community.*
