@@ -242,10 +242,11 @@
     "slot": "morning",
     "source": "grok-case",
     "text": "Day 10. Moving from stills to motion.\n\nTaking the Day 9 concept art into Grok Imagine Video: 6-second test clip, survivor crossing the frozen city toward the safehouse.\n\nSame brief I'd use to demo a doomsday short-drama opening. Posting the output, including the fails. #Grok #AI",
-    "published": false,
-    "needs_user_action": true,
+    "published": true,
+    "needs_user_action": false,
     "clip": "money-launch/末世短剧样品/08-末世样片-grok-2026-08-20.mp4",
     "clip_specs": "6.04s, 416x752, 24fps, with audio, 4.19MB",
-    "result_card": "money-launch/发布配图/2026-08-20-x-day10-grok-result.png"
+    "result_card": "money-launch/发布配图/2026-08-20-x-day10-grok-result.png",
+    "post_format": "video + result card, published 2026-08-20"
   }
 ]
