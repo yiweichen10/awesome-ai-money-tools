@@ -259,7 +259,10 @@
     "needs_user_action": true,
     "setup_card": "money-launch/发布配图/2026-08-21-x-day11-grok-setup.png",
     "doc": "money-launch/grok-day11-automation-test.md",
-    "note": "setup version 1B (275 chars); result version 1A ready after EP3 draft lands",
-    "publish_not_urgent": true
+    "note": "EP3 draft landed 2026-08-21 via Grok chat fast model (tier 3); result version 1A ready (265 chars); publishing optional",
+    "publish_not_urgent": true,
+    "ep3_draft": "money-launch/双语出海/07-ep3-script-en-grok-v1.md",
+    "result_card": "money-launch/发布配图/2026-08-21-x-day11-grok-result.png",
+    "result_text": "Day 11. Automation test of the Grok week.\n\nGave Grok one real job: generate EP3 of the doomsday drama from the 10-beat outline — 3-second hook, 30-second payoff, ending cliffhanger, no paywall on a free episode.\n\nThe script is the actual output. Judge it. #Grok #AI"
   }
 ]
