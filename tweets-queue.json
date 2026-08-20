@@ -247,7 +247,8 @@
     "clip": "money-launch/末世短剧样品/08-末世样片-grok-2026-08-20.mp4",
     "clip_specs": "6.04s, 416x752, 24fps, with audio, 4.19MB",
     "result_card": "money-launch/发布配图/2026-08-20-x-day10-grok-result.png",
-    "post_format": "video + result card, published 2026-08-20"
+    "post_format": "video + result card, published 2026-08-20",
+    "reported": "35 views, 0 hearts, 0 alerts"
   },
   {
     "day": 11,
@@ -258,6 +259,7 @@
     "needs_user_action": true,
     "setup_card": "money-launch/发布配图/2026-08-21-x-day11-grok-setup.png",
     "doc": "money-launch/grok-day11-automation-test.md",
-    "note": "setup version 1B (275 chars); result version 1A ready after EP3 draft lands"
+    "note": "setup version 1B (275 chars); result version 1A ready after EP3 draft lands",
+    "publish_not_urgent": true
   }
 ]

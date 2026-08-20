@@ -14,7 +14,7 @@ A curated list of high-leverage AI tools and proven monetization strategies to b
 
 ---
 
-## 📈 Build In Public — Week 1 Real Numbers (Aug 12–18)
+## 📈 Build In Public — Real Numbers (Aug 12–21)
 
 Views per post since restarting on X:
 
@@ -31,9 +31,11 @@ Views per post since restarting on X:
 
 → Day 9 (Grok test 01): 35
 
-Total: 177 views across 10 posts (Test + Day 1–9). Followers gained: 0 (7 pre-existing). Money made: $0.
+→ Day 10 (Grok test 02, video): 35
+
+Total: 212 views across 11 posts (Test + Day 1–10). Followers gained: 0 (7 pre-existing). Money made: $0.
 That is the real starting point — consistency is the test, not virality.
-Week 2: fewer broadcasts, more engagement. Day 10 (Grok test 02) — video test of Grok Imagine Video, sample pending.
+Week 2: fewer broadcasts, more engagement. Day 10 video test posted; Day 11 (Grok test 03, automation) in progress.
 
 ---
 
