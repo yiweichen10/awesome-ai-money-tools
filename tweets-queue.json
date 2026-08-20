@@ -248,5 +248,16 @@
     "clip_specs": "6.04s, 416x752, 24fps, with audio, 4.19MB",
     "result_card": "money-launch/发布配图/2026-08-20-x-day10-grok-result.png",
     "post_format": "video + result card, published 2026-08-20"
+  },
+  {
+    "day": 11,
+    "slot": "morning",
+    "source": "grok-case",
+    "text": "Day 11. From content to automation.\n\nTurning the doomsday short-drama pipeline into one Grok Build task: 10-beat outline → full EP3 with hook, payoff, cliffhanger and paid-card in the right spot.\n\nIf it holds, this is how delivery scales. Posting the actual output. #Grok #AI",
+    "published": false,
+    "needs_user_action": true,
+    "setup_card": "money-launch/发布配图/2026-08-21-x-day11-grok-setup.png",
+    "doc": "money-launch/grok-day11-automation-test.md",
+    "note": "setup version 1B (275 chars); result version 1A ready after EP3 draft lands"
   }
 ]
