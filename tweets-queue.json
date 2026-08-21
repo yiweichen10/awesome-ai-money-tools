@@ -277,11 +277,13 @@
     "slot": "morning",
     "source": "week1-recap",
     "text": "12 posts on X. The real numbers:\n\nViews: 3→18→8→6→7→11→49→9→31→35→35→27 = 239\nFollowers gained: 0 (had 7)\nMoney: $0\n\nClear signal: visual posts (49/35/35/27) beat text (single digits).\nWeek 2: fewer posts, going vertical — English short-drama scripts. #BuildInPublic #AI",
-    "published": false,
-    "needs_user_action": true,
+    "published": true,
+    "published_date": "2026-08-22",
+    "published_version": "1B (insight-first) + data card (assumed; if 1A was posted, correct me)",
+    "needs_user_action": false,
     "card": "money-launch/发布配图/2026-08-22-x-day12-week1-recap.png",
     "doc": "money-launch/X-Day12-week1-recap.md",
-    "note": "Day 11 data merged (27 views, 1 heart, 0 alerts) on 8/22; 12 posts / 239 views; followers gained 0 (had 7); money $0; ready to publish",
+    "note": "Published 2026-08-22 (user confirmed). Day 11 data merged (27 views, 1 heart, 0 alerts); 12 posts / 239 views; followers gained 0 (had 7); money $0. 24h data due 8/23.",
     "variant_b": "12 posts in. What actually moved the needle: visuals.\n\nViews by format:\n→ With image/video: 49 / 35 / 35 / 27\n→ Text only: single digits\n\nFollowers: 0. Money: $0. Still here.\nWeek 2: fewer posts, all visual, going vertical — English short-drama scripts. #BuildInPublic #AI"
   }
 ]
