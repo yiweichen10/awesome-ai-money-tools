@@ -259,7 +259,7 @@
     "needs_user_action": true,
     "setup_card": "money-launch/发布配图/2026-08-21-x-day11-grok-setup.png",
     "doc": "money-launch/grok-day11-automation-test.md",
-    "note": "EP3 draft landed 2026-08-21 via Grok chat fast model (tier 3); result version 1A ready (265 chars); publishing optional",
+    "note": "EP3 draft landed 2026-08-21 via Grok chat fast model (tier 3); Grok Build final output = EP1 only (confirmed); result 1A/1C + cards ready; publishing optional",
     "publish_not_urgent": true,
     "ep3_draft": "money-launch/双语出海/07-ep3-script-en-grok-v1.md",
     "result_card": "money-launch/发布配图/2026-08-21-x-day11-grok-result.png",
