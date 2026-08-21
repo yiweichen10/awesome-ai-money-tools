@@ -269,6 +269,18 @@
     "grok_build_free_today": true,
     "grok_build_output": "money-launch/双语出海/08-grok-build-pipeline-output.md",
     "result_build_card": "money-launch/发布配图/2026-08-21-x-day11-grok-build-result.png",
-    "result_build_text": "Day 11. Automation test of the Grok week.\n\nGrok Build turned the 10-beat outline into a working pipeline: a CLI + web desk that generates 60-90s episodes — hook, payoff, cliffhanger, paid card only on EP8/EP10.\n\nRan it on GLOBAL FREEZE. Actual output. #Grok #AI"
+    "result_build_text": "Day 11. Automation test of the Grok week.\n\nGrok Build turned the 10-beat outline into a working pipeline: a CLI + web desk that generates 60-90s episodes — hook, payoff, cliffhanger, paid card only on EP8/EP10.\n\nRan it on GLOBAL FREEZE. Actual output. #Grok #AI",
+    "reported": "27 views, 1 heart, 0 alerts"
+  },
+  {
+    "day": 12,
+    "slot": "morning",
+    "source": "week1-recap",
+    "text": "12 posts on X. The real numbers:\n\nViews: 3→18→8→6→7→11→49→9→31→35→35→27 = 239\nFollowers gained: 0 (had 7)\nMoney: $0\n\nClear signal: visual posts (49/35/35/27) beat text (single digits).\nWeek 2: fewer posts, going vertical — English short-drama scripts. #BuildInPublic #AI",
+    "published": false,
+    "needs_user_action": true,
+    "card": "money-launch/发布配图/2026-08-22-x-day12-week1-recap.png",
+    "doc": "money-launch/X-Day12-week1-recap.md",
+    "note": "Day 11 data merged (27 views, 1 heart, 0 alerts) on 8/22; 12 posts / 239 views; followers gained 0 (had 7); money $0; ready to publish"
   }
 ]
