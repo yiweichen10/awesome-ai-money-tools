@@ -263,6 +263,9 @@
     "publish_not_urgent": true,
     "ep3_draft": "money-launch/双语出海/07-ep3-script-en-grok-v1.md",
     "result_card": "money-launch/发布配图/2026-08-21-x-day11-grok-result.png",
-    "result_text": "Day 11. Automation test of the Grok week.\n\nGave Grok one real job: generate EP3 of the doomsday drama from the 10-beat outline — 3-second hook, 30-second payoff, ending cliffhanger, no paywall on a free episode.\n\nThe script is the actual output. Judge it. #Grok #AI"
+    "result_text": "Day 11. Automation test of the Grok week.\n\nGave Grok one real job: generate EP3 of the doomsday drama from the 10-beat outline — 3-second hook, 30-second payoff, ending cliffhanger, no paywall on a free episode.\n\nThe script is the actual output. Judge it. #Grok #AI",
+    "grok_build_free_today": true,
+    "grok_build_output": "money-launch/双语出海/08-grok-build-pipeline-output.md",
+    "result_build_text": "Day 11. Automation test of the Grok week.\n\nGrok Build turned the 10-beat outline into a working pipeline: a CLI + web desk that generates 60-90s episodes — hook, payoff, cliffhanger, paid card only on EP8/EP10.\n\nRan it on GLOBAL FREEZE. Actual output. #Grok #AI"
   }
 ]
